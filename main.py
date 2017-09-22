@@ -58,7 +58,7 @@ def menu():
 
 try:
     menu()
-except Exception as ee:
+except(KeyboardInterrupt, SystemExit):
     print(ee)
     from gopigo import *
     stop()
